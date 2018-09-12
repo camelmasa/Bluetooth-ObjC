@@ -18,6 +18,7 @@
 {
     self.viewController = viewController;
     // PeripheralManagerの初期化. Delegateにselfを設定し、起動時にBluetoothがOffならアラートを表示する.
+    // _cpmPeripheralManager = [[CBPeripheralManager alloc] initWithDelegate:self queue:nil options:@{CBPeripheralManagerOptionShowPowerAlertKey:@YES, CBPeripheralManagerOptionRestoreIdentifierKey:@"aaa"}];
     _cpmPeripheralManager = [[CBPeripheralManager alloc] initWithDelegate:self queue:nil options:@{CBPeripheralManagerOptionShowPowerAlertKey:@YES}];
     _isSubscribed = NO;
     _strGotValue = @"";
@@ -59,7 +60,7 @@
     [_cpmPeripheralManager addService:cmsService];
     
         // Advertisingの開始.Centralから探索可能にする.
-    [_cpmPeripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:SERVICE_UUID]] }];
+    [_cpmPeripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey: @[[CBUUID UUIDWithString:SERVICE_UUID]], CBAdvertisementDataLocalNameKey: @"whatevs" }];
     
     // set state text
     [_viewController setStateLabelText:@"Advertising started"];

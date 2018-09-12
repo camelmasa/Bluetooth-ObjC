@@ -239,8 +239,13 @@
 				TargetAttributes = {
 					F12D26631E208BF500C40B05 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 226BQCXKWJ;
+						DevelopmentTeam = J4XPFC6547;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					F12D267C1E208BF500C40B05 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -461,7 +466,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 226BQCXKWJ;
+				DEVELOPMENT_TEAM = J4XPFC6547;
 				INFOPLIST_FILE = BluetoothObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "japan-dev.BluetoothObjC";
@@ -473,7 +478,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 226BQCXKWJ;
+				DEVELOPMENT_TEAM = J4XPFC6547;
 				INFOPLIST_FILE = BluetoothObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "japan-dev.BluetoothObjC";
@@ -546,6 +551,7 @@
 				F12D26931E208BF500C40B05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F12D26941E208BF500C40B05 /* Build configuration list for PBXNativeTarget "BluetoothObjCTests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +560,7 @@
 				F12D26961E208BF500C40B05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F12D26971E208BF500C40B05 /* Build configuration list for PBXNativeTarget "BluetoothObjCUITests" */ = {
 			isa = XCConfigurationList;
@@ -562,6 +569,7 @@
 				F12D26991E208BF500C40B05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
